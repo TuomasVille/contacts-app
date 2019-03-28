@@ -14,7 +14,8 @@ namespace ContactsWebApi.Models
         public string LastName { get; set; }
         [StringLength(50)]
         public string Address { get; set; }
-        public int? PostalCode { get; set; }
+        [StringLength(50)]
+        public string PostalCode { get; set; }
         [StringLength(50)]
         public string City { get; set; }
         [StringLength(50)]
