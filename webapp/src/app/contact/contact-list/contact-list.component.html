@@ -1,0 +1,23 @@
+<div class="search-position">
+  <form>
+  <mat-form-field class="search-full-width">
+    <mat-icon matPrefix class="icon-position">search</mat-icon>
+    <input matInput placeholder="Search" #box (input)="searchFilter(box.value)">
+  </mat-form-field>
+  </form>
+<div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px" fxLayout.md="column" fxLayout.lt-sm="column"
+     fxLayout.lt-md="column" fxLayout.xs="column" class="card-padding">
+  <app-contact-list-item *ngFor="let contact of contacts | paginate: { itemsPerPage: 4, currentPage: p}"
+                         [contact]="contact"
+                         (contactDeleted)="onContactDeleted($event)">
+  </app-contact-list-item>
+</div>
+<div>
+  <pagination-controls (pageChange)="p = $event" fxLayoutAlign="center center" class="my-pagination"></pagination-controls>
+</div>
+<div>
+  <button mat-fab class="app-fab" (click)="onContactCreate()">
+    <mat-icon style="color: #FFFFFF">add</mat-icon>
+  </button>
+</div>
+</div>

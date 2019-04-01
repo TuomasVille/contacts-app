@@ -1,0 +1,61 @@
+.card-padding {
+  padding-top: 50px;
+}
+
+pagination-controls .ngx-pagination {
+  padding: 0;
+}
+
+.my-pagination .ngx-pagination .current {
+  background-color: #000000;
+  color: #F7F7F7;
+  border-radius: 80px;
+}
+
+pagination-controls .ngx-pagination a, .ngx-pagination{
+  border-radius: 80px;
+}
+
+.search-form {
+  width: 100%;
+  border-radius: 80px;
+  margin-left: 10%;
+}
+
+.search-full-width {
+  margin: 0;
+  padding: 0;
+  width: 20%;
+}
+
+.search-position {
+  margin-top: 3%;
+  text-align: center;
+  color: #000000;
+}
+
+.icon-position {
+  position: relative;
+  top: 6px;
+  color: #000000;
+}
+
+.mat-form-field-label{
+  color: #000000 !important;
+}
+.mat-form-field-underline {
+  background-color: #000000 !important;
+}
+.mat-form-field-ripple {
+  background-color: #000000!important;
+}
+
+.mat-input-element {
+  caret-color: #000000 !important;
+}
+
+@media (max-width: 420px) {
+  .search-full-width {
+    width: 60%;
+  }
+}

@@ -1,0 +1,57 @@
+.div-style {
+  margin-top: 100px;
+  width: 600px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-field-margin {
+  margin-left: 20px;
+}
+
+.icon-position-create {
+  position: relative;
+  top: 6px;
+}
+
+.icon-position-error {
+  position: relative;
+  top: 2px;
+}
+
+@media (max-width: 420px) {
+  .div-style {
+    width: 300px;
+    height: 530px;
+    margin-top: 2%;
+  }
+
+  .direction {
+    flex-direction: column !important;
+  }
+
+  .row-margin {
+    margin-left: 20px;
+  }
+
+  .form-field-margin {
+    margin: 0;
+  }
+}
+
+.mat-form-field-label{
+  color: #000000 !important;
+}
+
+.mat-form-field-underline {
+  background-color: #000000 !important;
+}
+
+.mat-form-field-ripple {
+  background-color: #000000 !important;
+}
+
+.mat-input-element {
+  caret-color: #000000 !important;
+}

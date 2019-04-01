@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 1px;
+}
+
+.menu-button {
+  color: #000000;
+}
+.background {
+  background-color: #F7F7F7;
+}
+
+.title-center {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  color: #000000;
+  margin-left: calc(50% - 160px);
+}
