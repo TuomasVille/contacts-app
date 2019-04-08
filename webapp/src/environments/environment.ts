@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   apiEndpointUrl: 'https://contactswebapi.azurewebsites.net/',
-  apiEnabled: false
+  apiEnabled: true
 };
 
 /*
