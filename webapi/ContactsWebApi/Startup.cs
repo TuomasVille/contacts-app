@@ -32,7 +32,7 @@ namespace ContactsWebApi
             services.AddScoped<IContactRepository, ContactRepository>();
             services.AddScoped<IContactService, ContactService>();
             services.AddDbContext<ContactsdbContext>(options => {
-                options.UseSqlServer(Configuration.GetConnectionString("LocalContactsDBContext"))
+                options.UseSqlServer(Configuration.GetConnectionString("AzureContactsDBContext"))
                 .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
             });
 
