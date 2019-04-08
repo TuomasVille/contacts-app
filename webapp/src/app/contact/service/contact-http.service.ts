@@ -14,7 +14,7 @@ export class ContactHttpService implements ContactProvider {
   url: string;
 
   constructor(private httpClient: HttpClient) {
-    this.url = environment.apiEndpointUrl + '/api/contacts';
+    this.url = environment.apiEndpointUrl + '/contacts';
   }
 
   search(name: string): Observable<Contact[]> {
